@@ -1,0 +1,1426 @@
+@charset "utf-8";
+/* CSS Document*/
+/* ___CSS FOR MOBILE MIN @320px - MEDIA QUERIES ARE USED FOR THE REST OF THE WIDTHS___ */
+/* ___GENERAL STYLING & CLASSES, CONTAINERS & GRIDS, GALLERY CSS, MEDIA QUERIES, PSEUDO HYPERLINK ___*/
+body {
+  background-color: white;
+  font-size: 1rem;
+  font-family: 'Times New Roman', Times, serif;
+  color: black;
+  line-height: 1.8rem;
+  text-align: center;
+  margin: auto;
+}
+
+h1 {
+  font-size: 1.25rem;
+  font-family: 'adorn-serif', Times, serif;
+  color: black;
+  line-height: 1.8rem;
+  padding-top: 0.15rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.15rem;
+  font-family: 'adorn-serif', Times, serif;
+  color: black;
+  line-height: 1.8rem;
+  text-align: left;
+  padding: 1rem;
+}
+
+h3 {
+  font-size: 1.15rem;
+  font-family: 'adorn-serif', Times, serif;
+  color: white;
+  line-height: 1.8rem;
+  text-align: center;
+  padding-top: 1.75rem;
+}
+h4 {
+  display: flex;
+  flex-direction: row;
+  font-size: 1.25rem;
+}
+
+h4:before,
+h4:after {
+  content: "";
+  flex: 1 1;
+  border-bottom: 2px inset #006838;
+  margin: auto;
+}
+
+.regularH1 {
+  font-family: 'Times New Roman', Times, serif;
+  color: black;
+  font-size: 1.25rem;
+  line-height: 1.8rem;
+  text-align: center;
+  margin: auto;
+}
+
+.whiteH1 {
+  font-size: 1.25rem;
+  color: white;
+}
+
+.greenH2 {
+  color: #006838;
+  font-size: 1.15rem;
+  font-family: 'adorn-serif', Times, serif;
+  line-height: 1.8rem;
+  text-align: left;
+  padding: 1rem;
+  text-align: center;
+  margin: auto;
+}
+
+.h2Center {
+  font-size: 1.15rem;
+  font-family: 'adorn-serif', Times, serif;
+  color: black;
+  line-height: 1.8rem;
+  text-align: center;
+}
+
+.servicesH1 {
+  vertical-align: middle;
+  padding: 0.313rem;
+}
+
+.foundersH1 {
+  font-family: 'Times New Roman', Times, serif;
+  color: black;
+  font-size: 1.25rem;
+  line-height: 1.8rem;
+  text-align: center;
+  margin: auto;
+  padding-left: 1.25rem;
+}
+
+.pCenter {
+  font-size: 1.15rem;
+  text-align: center;
+}
+
+p {
+  text-align: left;
+  font-size: 1rem;
+  padding-bottom: 2rem;
+  padding-left: 0.938rem;
+  padding-right: 0.938rem;
+}
+
+ul {
+  text-align: left;
+  font-size: 1rem;
+  padding-bottom: 2rem;
+}
+
+.backProjects {
+  padding-top: 8rem;
+}
+
+.projectHeader {
+  font-size: 1.25rem;
+  font-family: 'adorn-serif', Times, serif;
+  color: white;
+  background: #006838;
+  padding-top: 0.3125rem;
+  padding-bottom: 0.1875rem;
+  line-height: 1.8rem;
+  text-align: center;
+}
+
+.projectSubhead {
+  font-size: 1rem;
+  font-family: 'adorn-serif', Times, serif;
+  color: black;
+  text-align: center;
+}
+
+hr {
+  border: outset 3px gainsboro;
+}
+
+section,
+footer,
+div,
+p {
+  clear: both;
+}
+
+.zeroPadding {
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 1rem;
+}
+
+.sectionMargin {
+  margin-top: 2rem;
+}
+
+.icon{ /* Location Icon */
+  vertical-align: middle;
+  margin-left: 0.6em;
+  margin-right: 0.6em;
+  padding-bottom: 0.25em;
+  max-width: 5%;
+}
+
+.phoneIcon{
+  max-width: 4.5vw;
+  vertical-align: middle;
+  margin-left: 0.25em;
+  padding-bottom: 0.25em;
+}
+
+.socialIcon{
+  max-width: 12vw;
+  vertical-align: middle;
+  margin-left: 0.6em;
+  margin-right: 0.6em;
+  padding-bottom: 0.25em;
+}
+
+.otherIcon {
+  max-width: 28%;
+}
+
+.emailIconContactPage {
+  max-width: 20%;
+}
+
+.photoShadow {
+  width: 80%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.photoShadow1 {
+  width: 80%;
+  box-shadow: rgba(0, 0, 0, 0.514) 0px 5px 15px;
+}
+
+.projectPhotoStyle {
+  max-width: 39vw;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.founderPhoto {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin: 0.625em;
+  width: 20%;
+}
+
+.founderDiv {
+  background: rgb(230,231,232);
+  background: linear-gradient(0deg, rgba(230,231,232,0.5) 0%, rgba(255,255,255,0.5) 50%, rgba(230,231,232,0.5) 100%);
+  margin-top: -7px;
+  margin-bottom: -20px;
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+.aboutUsPhoto1 {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin: 0.625em;
+  width: 90%;
+}
+
+.aboutUsPhoto2 {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin: 0.625em;
+  width: 90%;
+}
+
+.phoneNumber {
+  display: none;
+}
+
+.logo {
+  width: 100%;
+}
+
+.banner {
+  width: 60%;
+}
+
+.greaterNW {
+  font-size: 1.16rem;
+}
+
+.navButtons {
+  max-height: 5.5vh;
+  padding-top: 0.125rem;
+}
+
+.contactUs {
+  width: 5.7vw;
+}
+
+.officesContainer {
+  padding-top: 2rem;
+}
+#hermistonoffice2 {
+  padding-top: 2rem;
+}
+
+.needButtons {
+  height: 5.7vh;
+}
+
+.aboutPage {
+  padding-top: 2rem;
+}
+
+.contactMargin {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+iframe {
+  width: 90%;
+  height: 50%;
+}
+
+.jumpToButton {
+  height: 12vw;
+}
+
+.noShow {
+  display: none;
+}
+
+
+/* ___CONTAINERS & GRIDS___ */
+/* ___GLOBAL - HEADER GRID___ */
+.headerContainer {
+  background-color: #006838;
+  color: white;
+  font-size: 1.125rem;
+  text-align: center;
+  max-width: 100vw;
+  margin: 0;
+  padding: 0.625rem;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr, 1fr;
+  height: fit-content;
+  grid-template-areas:
+      "ontario1 hermiston2";
+}
+#ontario1 {
+  grid-area: ontario1;
+  font-size: 1rem;
+}
+#hermiston2 {
+  grid-area: hermiston2;
+  font-size: 1rem;
+}
+
+
+ /* ___GLOBAL - LOGO CONTAINER___ */
+ .logoContainer {
+  background-color: white;
+  background-image: url("../img/drawing.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+
+/* ___GLOBAL - NAV GRID___ */
+.navContainer {
+  background: rgb(230,231,232);
+  background: linear-gradient(0deg, rgba(230,231,232,0.5) 0%, rgba(255,255,255,0.5) 50%, rgba(230,231,232,0.5) 100%);
+  text-align: center;
+  max-width: 100vw;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr, 1fr, 1fr, 1fr;
+  grid-template-rows: 1fr;
+  height: fit-content;
+  grid-template-areas:
+      "home1 about2 projects3 contact4";
+}
+#home1 {
+  grid-area: home1;
+}
+#about2 {
+  grid-area: about2;
+}
+#projects3 {
+  grid-area: projects3;
+}
+#contact4 {
+  grid-area: contact4;
+}
+
+
+/* ___GLOBAL - FOOTER GRID___ */
+.footerContainer {
+  background-image: url(img/drawing.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-color: grey;
+  color: white;
+  font-size: 1.25rem;
+  text-align: center;
+  max-width: 100vw;
+  margin-top: 5vh;
+  padding-bottom: 5vh;
+  display: grid;
+  grid-template-rows: 1fr, 1fr, 1fr;
+  grid-template-columns: 1fr;
+  height: fit-content;
+  grid-template-areas:
+      "oaddress1"
+      "haddress3"
+      "officehours2"
+}
+#oaddress1 {
+  grid-area: oaddress1;
+}
+#haddress3 {
+  grid-area: haddress3;
+}
+#officehours2 {
+  grid-area: officehours2;
+}
+/* ___GLOBAL END___ */
+
+
+/* ___INDEX - NEED BUTTONS___ */
+.twoColumn {  
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr, 1fr;
+  grid-template-areas:
+    " needEngineer1 needSurvey2"
+}
+#needEngineer1 {
+  grid-area: needEngineer1;
+}
+#needsurvey2 {
+  grid-area: needSurvey2;
+}
+
+/* ___INDEX - SERVICES GRID___ */
+.servicesContainer {
+  text-align: left;
+  align-content: center;
+  font-size: 1.125rem;
+  width: fit-content;
+  height: fit-content;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr, 1fr, 1fr, 1fr;
+  gap: 0.25rem;
+  grid-template-areas:
+      "civil1"
+      "structural2"
+      "electrical3" 
+      "survey4"
+}
+#civil1 {
+  grid-area: civil1;
+}
+#structural2 {
+  grid-area: structural2;
+}
+#electrical3 {
+  grid-area: electrical3;
+}
+#survey4 {
+  grid-area: survey4;
+}
+
+
+/* INDEX - BOX STYLING > SERVICES CONTAINER */
+#civil1 > div {
+  background-color: #006838;
+  max-height: fit-content;
+  text-align: center;
+  padding-top: 1.875rem;
+}
+#civil1 > div > div {
+  background-color: #009444;
+  min-height: fit-content;
+  text-align: center;
+}
+#structural2 > div {
+  background-color: #006838;
+  max-height: fit-content;
+  text-align: center;
+  padding-top: 1.875rem;
+}
+#structural2 > div > div {
+  background-color: #009444;
+  max-height: fit-content;
+  text-align: center;
+}
+#electrical3 > div {
+  background-color: #006838;
+  max-height: fit-content;
+  text-align: center;
+  padding-top: 1.875rem;
+}
+#electrical3 > div > div {
+  background-color: #009444;
+  max-height: fit-content;
+  text-align: center;
+}
+#survey4 > div {
+  background-color: #006838;
+  max-height: fit-content;
+  text-align: center;
+  padding-top: 1.875rem;
+}
+#survey4 > div > div {
+  background-color: #009444;
+  max-height: fit-content;
+  text-align: center;
+}
+/* ___INDEX END___ */
+
+
+/* ___PROJECTS - PAGE GRIDS___ */
+.projectsButtons {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr, 1fr, 1fr, 1fr;
+  height: fit-content;
+  grid-template-areas:
+  "civilButton structuralButton electricalButton surveyButton"
+}
+#civilButton {
+  grid-area: civilButton;
+}
+#structuralButton {
+  grid-area: structuralButton;
+}
+#electricalButton {
+  grid-area: electricalButton;
+}
+#surveyButton {
+  grid-area: surveyButton;
+}
+
+
+.projectsGrid {
+  display: grid;  
+  grid-template-columns: minmax(0, 1fr) 1fr;
+  grid-template-rows: 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  grid-template-areas:
+      "civilmain   civilmain"
+      "santiam     pcenergyproj"
+      "structmain  structmain"
+      "pcenergy    pioneers"
+      "entebi      forests"
+      "electmain   electmain"
+      "fruite      malheurf"
+      "newp        ."
+      "survmain    survmain"
+      "ontarioa    airf"
+      "butterc     gardenv"
+      "northo      suckerc"
+      "alaska      ranch"
+      "touchetr    barb"
+      "tvcc        ."
+}
+#civilmain {
+  grid-area: civilmain;
+}
+#santiam {
+  grid-area: santiam;
+  border: outset 4px gainsboro;
+  padding-top: 0.3125rem;
+}
+#pcenergyproj {
+  grid-area: pcenergyproj;
+  border: outset 4px gainsboro;
+  padding-top: 0.3125rem;
+}
+#structmain {
+  grid-area: structmain;
+  margin-top: 6.25rem;
+}
+#pcenergy {
+  grid-area: pcenergy;
+  border: outset 4px gainsboro;
+  padding-top: 0.3125rem;
+}
+#pioneers {
+  grid-area: pioneers;
+  border: outset 4px gainsboro;
+  padding-top: 0.3125rem;
+}
+#entebi {
+  grid-area: entebi;
+  border: outset 4px gainsboro;
+  padding-top: 0.3125rem;
+}
+#forests {
+  grid-area: forests;
+  border: outset 4px gainsboro;
+  padding-top: 0.3125rem;
+}
+#electmain {
+  grid-area: electmain;
+  margin-top: 6.25rem;
+}
+#fruite {
+  grid-area: fruite;
+  border: outset 4px gainsboro;
+  padding-top: 0.3125rem;
+}
+#malheurf {
+  grid-area: malheurf;
+  border: outset 4px gainsboro;
+  padding-top: 0.3125rem;
+}
+#newp {
+  grid-area: newp;
+  border: outset 4px gainsboro;
+  padding-top: 0.3125rem;
+}
+#survmain {
+  grid-area: survmain;
+  margin-top: 6.25rem;
+}
+#ontarioa {
+  grid-area: ontarioa;
+  border: outset 4px gainsboro;
+  padding-top: 0.3125rem;
+}
+#airf {
+  grid-area: airf;
+  border: outset 4px gainsboro;
+  padding-top: 0.3125rem;
+}
+#butterc {
+  grid-area: butterc;
+  border: outset 4px gainsboro;
+  padding-top: 0.3125rem;
+}
+#gardenv {
+  grid-area: gardenv;
+  border: outset 4px gainsboro;
+  padding-top: 0.3125rem;
+}
+#northo {
+  grid-area: northo;
+  border: outset 4px gainsboro;
+  padding-top: 0.3125rem;
+}
+#suckerc {
+  grid-area: suckerc;
+  border: outset 4px gainsboro;
+  padding-top: 0.3125rem;
+}
+#alaska {
+  grid-area: alaska;
+  border: outset 4px gainsboro;
+  padding-top: 0.3125rem;
+}
+#ranch {
+  grid-area: ranch;
+  border: outset 4px gainsboro;
+  padding-top: 0.3125rem;
+}
+#touchetr {
+  grid-area: touchetr;
+  border: outset 4px gainsboro;
+  padding-top: 0.3125rem;
+}
+#barb {
+  grid-area: barb;
+  border: outset 4px gainsboro;
+  padding-top: 0.3125rem;
+}
+#tvcc {
+  grid-area: tvcc;
+  border: outset 4px gainsboro;
+  padding-top: 0.3125rem;
+}
+/* ___PROJECTS END___ */
+
+
+/* ___CONTACT - PAGE GRIDS___ */
+.mobileContactPageButton {
+  height: 4.5vh;
+}
+.contactButtons {
+  display: none;
+}
+.tabletContactPageButtons {
+  display: none;
+}
+
+.mapContainer {
+  display: grid;
+  grid-template-rows: 1fr, 1fr;
+  grid-template-columns: 1fr;
+  gap: 0.5rem;
+  height: fit-content;
+  grid-template-areas:
+      "ontarioMap1"
+      "hermistonMap2"
+}
+#ontarioMap1 {
+  grid-area: ontarioMap1;
+}
+#hermistonMap2 {
+  grid-area: hermistonMap2;
+}
+/* ___CONTAINERS & GRIDS END___ */
+
+
+/* ___PROJECTS - INDIVIDUAL PROJECTS PAGE SLIDESHOW CSS___ */
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  max-height: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Image size slideshow */
+.slideShowImage {
+  height: 20vh;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #070707;
+  font-size: 0.9375rem;
+  padding: 0.5rem 0.75rem;
+  position: absolute;
+  bottom: -7.25rem;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 0.75rem;
+  padding: 0.5rem 0.75rem;
+  position: absolute;
+  top: 0%;
+}
+
+/* Circle/dot/bullet main style */
+.circleStyle {
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 0.9375rem;
+  width: 0.9375rem;
+  margin: -3.25rem 0.07rem 1.5rem 0.07rem;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+/*  ___MEDIA QUERIES___  */
+@media screen and (min-width: 700px) {
+  body, 
+  p,
+  ul {
+    line-height: 2.2rem;
+  }
+
+  h1 {
+     padding-top: 0;
+  }
+ 
+  .gradientContainer {
+    background-image: repeating-linear-gradient(whitesmoke, #FFFFFF, whitesmoke);
+    background-position: center;
+    max-width: 85vw;
+    min-width: 85vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2.5rem;
+    margin-top: 1.25rem;
+    padding: 1.25rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+  
+  .noShow {
+    display: inline;
+  }
+
+  .noShowHr {
+    display: none;
+  }
+
+  .noShowButton {
+    display: none;
+  }
+
+  .otherIcon {
+    max-width: 20%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  .phoneIcon{
+    width: 2.5vw;
+    vertical-align: middle;
+    margin-left: 0.6em;
+    margin-right: 0.6em;
+    padding-bottom: 0.25em;
+  }
+  
+  .socialIcon{
+    width: 5.5vw;
+    vertical-align: middle;
+    margin-left: 0.6em;
+    margin-right: 0.6em;
+    padding-bottom: 0.25em;
+  }
+  
+  .phoneNumber {
+    display: inline;
+  }
+  
+  .logo {
+    width: 70%;
+  }
+  
+  .greaterNW {
+    font-size: 1.35rem;
+  }
+  
+  .banner {
+    width: 32%;
+  }
+
+  .navButtons {
+    max-height: 7vh;
+    padding-top: 0.125rem;
+  }
+
+  .navContainer {
+    background: rgb(230,231,232);
+    background: linear-gradient(0deg, rgba(230,231,232,0.5) 0%, rgba(255,255,255,0.5) 50%, rgba(230,231,232,0.5) 100%);
+    text-align: center;
+    min-width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr, 1fr, 1fr, 1fr, 1fr, 1fr;
+    grid-template-rows: 1fr;
+    height: fit-content;
+    grid-template-areas:
+        ". home1 about2 projects3 contact4 ."
+  }
+
+  .needButtons {
+    height: 6.5vh;
+  }
+  
+  .photoShadow {
+    width: 90%;
+  }
+
+  .contactUs {
+    width: 30vw;
+ }
+
+  .emailIconNoShow {
+    display: none;
+  }
+
+  .aboutPage {
+    padding-top: 2rem;
+  }
+
+  .projectPhotoStyle {
+    max-width: 22vw;
+  }
+
+  .projectHeader {
+    font-size: 1.25rem;
+    padding-top: 0.5rem;
+  }
+  
+  .projectSubhead {
+    font-size: 1rem;
+  }
+
+  .jumpToButton {
+    height: 7.5vh;
+  }
+
+  .officesContainer {
+    display: grid;
+    grid-template-rows: 1fr, 1fr, 1fr;
+    grid-template-columns: minmax(0, 1fr) 1fr;
+    gap: 0.5rem;
+    height: fit-content;
+    grid-template-areas:
+        "ontariooffice1 hermistonoffice2"
+  }
+  #ontariooffice1 {
+    grid-area: ontariooffice1;
+  }
+  #hermistonoffice2 {
+    grid-area: hermistonoffice2;
+    padding-top: 0;
+  }
+  
+  .servicesContainer {
+  text-align: left;
+  align-content: center;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 1fr;
+  grid-template-rows: 1fr, 1fr;
+  gap: 0.35em;
+  grid-template-areas:
+      "civil1 structural2"
+      "electrical3 survey4"
+  }
+
+  .projectsGrid {
+    display: grid;  
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) 1fr;
+    grid-template-rows: 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr;
+    grid-template-areas:
+        "civilmain   civilmain       civilmain"
+        "santiam     pcenergyproj    ."
+        "structmain  structmain      structmain"
+        "pcenergy    pioneers        entebi"
+        "forests     .               ."
+        "electmain   electmain       electmain"
+        "fruite      malheurf        newp"
+        "survmain    survmain        survmain"
+        "ontarioa    airf            butterc"
+        "gardenv     northo          suckerc"
+        "alaska      ranch           touchetr"
+        "barb        tvcc            ."
+  }
+
+  .tabletContactPageButtons {
+    display: grid;
+    grid-template-columns: 1fr, 1fr, 1fr, 1fr;
+    gap: 0.25em;
+    text-align: center;
+    grid-template-areas:
+        "civilContactEngineer1 structuralContactEngineer2 electricalContactEngineer3 surveyorContactButton4"
+  }
+  #civilContactEngineer1 {
+    grid-area: civilEngineer1;
+  }
+  #structuralContactEngineer2 {
+    grid-area: structuralEngineer2;
+  }
+  #electricalContactEngineer3 {
+    grid-area: electricalEngineer3;
+  }
+  #surveyorContactButton4 {
+    grid-area: surveyor4;
+  }
+  .contactButtons {
+    display: inline;
+    height: 4.4vh;
+  }
+
+  .footerContainer {
+    font-size: 1.25rem;    
+    display: grid;    
+    grid-template-columns: minmax(0, 1fr) 1fr;
+    grid-template-rows: 1fr, 1fr;
+    height: fit-content;
+    grid-template-areas:
+        "oaddress1    haddress3"
+        "officehours2 officehours2"
+  }
+  .slideShowImage {
+  height: 40vh;
+  }
+  .dot {
+    height: 1.0rem;
+    width: 1.0rem;
+    margin: -3.25rem 0.07rem 2.0rem 0.07rem;
+  }
+}
+
+
+@media screen and (min-width: 1000px) {
+  body, 
+  p,
+  ul {
+    font-size: 1.15rem;
+    line-height: 2.5rem;
+  }
+  
+  h1 {
+    font-size: 1.3rem;
+  }
+  
+  h2 {
+    font-size: 1.25rem;
+  }
+  
+  h3 {
+    font-size: 1.15rem;
+  }
+  
+  .regularH1 {
+    font-size: 1.3rem;
+  }
+  
+  .whiteH1 {
+    font-size: 1.3rem;
+  }
+  
+  .greenH2 {
+    font-size: 1.25rem;
+  }
+  
+  .h2Center {
+    font-size: 1.25rem;
+  }
+
+  .servicesH1 {
+    font-size: 1.3rem;
+    vertical-align: middle;
+    padding-top: .75rem;
+  }
+
+  .pCenter {
+    font-size: 1.25rem;
+    text-align: center;
+  }
+
+  .icon{ /* Location Icon */
+    vertical-align: middle;
+    margin-left: 0.6em;
+    margin-right: 0.6em;
+    padding-bottom: 0.25em;
+    max-width: 3.5%;
+  }
+
+  .phoneIcon{
+    max-width: 2vw;
+    margin-left: 0.25em;
+    margin-right: 0.25em;
+    padding-bottom: 0.25em;
+  }
+  
+  .socialIcon{
+    max-width: 4.5vw;
+  }
+
+  .otherIcon {
+    max-width: 18%;
+  }
+
+  .phoneNumber {
+    display: inline;
+  }
+  
+  .logo {
+    max-width: 60%;
+  }
+  
+  .greaterNW {
+    font-size: 1.5rem;
+  }
+
+  .banner {
+    width: 30%;
+  }
+
+  .navButtons {
+    max-height: 8vh;
+    padding-top: 0.125rem;
+  }
+
+  .needButtons {
+    height: 8vh;
+  }
+
+  .emailIconNoShow {
+    display: none;
+  }
+
+  .aboutUsPhoto1 {
+    float: left;
+    max-width: 50%;
+    margin: 1rem;
+  }
+  .aboutUsPhoto2 {
+    float: right;
+    max-width: 50%;
+    margin: 1rem;
+  }
+  .h1Left {
+    text-align: left;
+    margin-left: 10rem;
+    margin-top: 2rem;
+  }
+  .h1Right {
+    text-align: right;
+    margin-right: 5em;
+    margin-top: 2rem;
+  }
+
+  .projectHeader {
+    font-size: 1.3rem;
+  }
+  
+  .projectSubhead {
+    font-size: 1.15rem;
+  }  
+  
+  .projectPhotoStyle {
+    max-width: 17vw;
+  }
+
+  .jumpToButton {
+    height: 10vh;
+  }
+
+  .projectsGrid {
+    display: grid;  
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) 1fr;
+    grid-template-rows: 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr;
+    grid-template-areas:
+        "civilmain   civilmain       civilmain     civilmain"
+        "santiam     pcenergyproj    .             ."
+        "structmain  structmain      structmain    structmain"
+        "pcenergy    pioneers        entebi        forests"
+        "electmain   electmain       electmain     electmain"
+        "fruite      malheurf        newp          ."
+        "survmain    survmain        survmain      survmain"
+        "ontarioa    airf            butterc       gardenv"
+        "northo      suckerc         alaska        ranch"
+        "touchetr    barb            tvcc          ."
+  }
+  .slideShowImage {
+    height: 50vh;
+  }
+  .dot {
+      height: 1.1rem;
+      width: 1.1rem;
+      margin: -3.25rem 0.07rem 2.5rem 0.07rem;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  body, 
+  p,
+  ul {
+    font-size: 1.3rem;
+    line-height: 2.7rem;
+  }
+  
+  h1 {
+    font-size: 1.5rem;
+  }
+  
+  h2 {
+    font-size: 1.25rem;
+  }
+  
+  h3 {
+    font-size: 1.25rem;
+  }
+  
+  .regularH1 {
+    font-size: 1.5rem;
+  }
+  
+  .whiteH1 {
+    font-size: 1.5rem;
+  }
+  
+  .greenH2 {
+    font-size: 1.25rem;
+  }
+  
+  .h2Center {
+    font-size: 1.25rem;
+  }
+
+  .pCenter {
+    font-size: 1.25rem;
+    text-align: center;
+  }
+
+  .icon{ /* Location Icon */
+    vertical-align: middle;
+    margin-left: 0.6em;
+    margin-right: 0.6em;
+    padding-bottom: 0.25em;
+    max-width: 3%;
+  }
+
+  .phoneIcon{
+    max-width: 1.75vw;
+    vertical-align: middle;
+    margin-left: 0.25em;
+    margin-right: 0.25em;
+    padding-bottom: 0.25em;
+  }
+  
+  .socialIcon{
+    max-width: 4vw;
+    vertical-align: middle;
+    margin-left: 0.6em;
+    margin-right: 0.6em;
+    padding-bottom: 0.25em;
+  }
+
+  .otherIcon {
+    max-width: 16%;
+  }
+  
+  .logo {
+    max-width: 55%;
+  }
+  
+  .greaterNW {
+    font-size: 1.7rem;
+  }
+
+  .banner {
+    width: 30%;
+  }
+
+  .navButtons {
+    max-height: 9.5vh;
+    padding-top: 0.125rem;
+  }
+
+  .photoShadow {
+    width: 77%;
+  }
+
+  .needButtons {
+    height: 10vh;
+  }
+
+  .aboutUsPhoto1 {
+    width: 50%;
+  }
+  
+  .aboutUsPhoto2 {
+    width: 50%;
+  }
+
+  .emailIconNoShow {
+    display: none;
+  }
+
+  .servicesContainer {
+    text-align: left;
+    align-content: center;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) 1fr;
+    grid-template-rows: 1fr;
+    gap: 0.35em;
+    grid-template-areas:
+        "civil1 structural2 electrical3 survey4"
+    }
+
+  .projectHeader {
+    font-size: 1.5rem;
+  }
+  
+  .projectSubhead {
+    font-size: 1.3rem;
+  }
+
+  .projectPhotoStyle {
+    max-width: 17.8vw;
+  }
+
+  .jumpToButton {
+    height: 11vh;
+  }
+
+  .contactButtons {
+    max-width: 5vh;
+  }
+  .mobileContactPageButton {
+    display: none;
+  }
+  .slideShowImage {
+    height: 50vh;
+  }
+  .dot {
+      height: 1.2rem;
+      width: 1.2rem;
+      margin: -3.25rem 0.07rem 3.0rem 0.07rem;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .logo {
+    width: 50%;
+  }
+
+  .emailIconNoShow {
+    display: none;
+  }
+
+  .banner {
+    width: 28%;
+  }
+
+  .projectPhotoStyle {
+    max-width: 17vw;
+  }
+
+  .gradientContainer {
+    max-width: 80vw;
+    min-width: 80vw;
+  }
+  .slideShowImage {
+    height: 60vh;
+  }
+  .dot {
+      height: 1.2rem;
+      width: 1.2rem;
+      margin: -3.25rem 0.07rem 3.0rem 0.07rem;
+  }
+}
+
+@media screen and (min-width: 1700px) {
+  .logo {
+    max-width: 38%;
+  }
+
+  .emailIconNoShow {
+    display: none;
+  }
+
+  .banner {
+    width: 25%;
+  }
+
+  .navButtons {
+    max-height: 7vh;
+    padding-top: 0.125rem;
+  }
+
+  .photoShadow {
+    width: 77%;
+  }
+
+  .needButtons {
+    height: 7vh;
+  }
+  
+  .contactUs {
+    max-width: 10vw;
+ }
+
+  .aboutUsPhoto1 {
+    width: 40%;
+  }
+  
+  .aboutUsPhoto2 {
+    width: 40%;
+  }
+
+  .jumpToButton {
+    height: 9vh;
+  }
+
+  .projectPhotoStyle {
+    max-width: 17vw;
+  }
+  
+  .phoneIcon{
+    width: 1.1vw;
+  }
+
+  .socialIcon{
+    width: 3vw;
+  }
+
+  .contactUsButton {
+    max-width: 12.5vw;
+  }
+
+  .footerContainer {
+    text-align: center;
+    max-width: 100vw;
+    margin-top: 5vh;
+    padding-bottom: 5vh;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 1fr minmax(0, 1fr);
+    grid-template-rows: 1fr;
+    height: fit-content;
+    grid-template-areas:
+        "oaddress1 officehours2 haddress3"
+  }
+  .slideShowImage {
+    height: 60vh;
+  }
+  .dot {
+      height: 1.2rem;
+      width: 1.2rem;
+      margin: -3.25rem 0.07rem 3.0rem 0.07rem;
+  }
+}
+
+/*  ____PSEUDO HYPERLINK STYLING____  */
+a:link {
+  color: #009444;
+}
+
+a:visited {
+    color: #009444;
+}
+
+a:hover {
+    color: #006838;
+}
+
+a:active {
+    color: #009444;
+}

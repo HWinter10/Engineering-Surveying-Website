@@ -1,0 +1,122 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f0f2f5;
+}
+
+.gradientContainer {
+  padding: 2rem;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.timeline {
+  position: relative;
+  width: 90%;
+  max-width: 1000px;
+  margin: 5rem auto;
+  padding: 2rem 0;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  background-color: #00558c;
+  z-index: 1;
+}
+
+.timeline-event {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 5rem;
+  opacity: 0;
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+
+.timeline-event.visible {
+  opacity: 1;
+}
+
+.timeline-event.left {
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  transform: translateX(-50px);
+}
+
+.timeline-event.right {
+  flex-direction: row;
+  justify-content: flex-start;
+  transform: translateX(50px);
+}
+
+.timeline-event.left.visible,
+.timeline-event.right.visible {
+  transform: translateX(0);
+}
+
+.timeline-photo {
+  width: 180px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.timeline-photo img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.timeline-content {
+  background: #ffffff;
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+  border-left: 5px solid #00558c;
+  max-width: 40%;
+  margin: 0 20px;
+}
+
+.timeline-event.left .timeline-content {
+  text-align: right;
+  border-left: none;
+  border-right: 5px solid #00558c;
+}
+
+.timeline-title {
+  margin-top: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .timeline-event {
+    flex-direction: column !important;
+    align-items: center;
+    text-align: center;
+  }
+
+  .timeline-content {
+    max-width: 90%;
+    margin-top: 1rem;
+    border-left: 5px solid #00558c !important;
+    border-right: none !important;
+    text-align: left !important;
+  }
+
+  .timeline::before {
+    left: 10px;
+    transform: none;
+  }
+}
