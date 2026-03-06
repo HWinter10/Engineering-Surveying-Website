@@ -1,8 +1,10 @@
 ## CK3 Website Project
 
-This project is a static multi-page website built using HTML, CSS, and JavaScript to demonstrate front-end web development fundamentals including page layout, navigation structure, and basic interactive elements. The site organizes multiple pages through consistent navigation and shared styling while incorporating JavaScript to enhance user interaction.
+This project is a responsive static multi-page website built from scratch using HTML, CSS, and JavaScript. The site demonstrates front-end development fundamentals including page layout, navigation structure, and basic interactive elements.
 
-The project emphasizes clean structure and separation of concerns by organizing HTML content, CSS styling, and JavaScript functionality into separate components. The design supports multi-page navigation and reusable styles to maintain consistency across the site.
+The design adapts to different screen sizes, supporting desktop and mobile devices through responsive CSS. All graphics and visual elements were also designed as part of the project, and the site maintains consistent styling and navigation across multiple pages.
+
+The project also emphasizes clean organization and separation of concerns by structuring HTML content, CSS styling, and JavaScript functionality into clearly defined components.
 
 ### Features
 <ul>
